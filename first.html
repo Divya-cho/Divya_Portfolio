@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <header>
+        <img src="d.JPG" width="100px" align="left">
+        <nav>
+            <h1>My portfolio</h1>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">My works</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="first.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p><h4>Personal information :</h4>Hello... Welcome to my portfolio<br>My name is Divya Chodi. Iam software engineer with strong foundation in various programming languages and technologies.I am excited to share my skills and projects with you.. I am currently working in the Hallmark global tachnologies at Hyderabad.
+        I have completed 3 years of Btech third year student of Rajive gandhi university of knowledge technologies Nuzivid.
+        My native place is Draksaramam, East godavari district, Andhrapradesh.</p>
+        <br>
+        <div class="o" style="display: flex;flex-direction: row-reverse;">
+            <div class="co" style="width:450px ;margin-right: 0px;color: white;">
+                <center>
+        <h4>Education details : </h4> SSC Cgpa : 10.0<br>
+        Pre university course : 9.2<br>
+        BTech (Till now) : 9.0
+        </center>
+        </div>
+        <div class="co" style="width:450px;">
+            <center>
+        <br><h4 style="color:white">Technical skills : </h4>Programming languages : Java, Python and MySql<br>
+        Web Languages : HTML, CSS and JavaScript<br>Tools : MS Excel
+            </span>
+        </center>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div id="o">
+        <div class="co" style="background-color:rgb(99, 101, 104)">
+        <center><h4>Youtube scraping</h4></center>
+        <div class="project">
+            <center><img src="yt.png" width="150px" class="i" align="center"></center><br>
+            <p>  Youtube scraping is a analysis project where the statistics of the youtube 
+channels are extracted, analysed and visualised. <br>
+1. Ranking the collected channels based on the views. <br>
+2. Analysing the channels statistics and deriving the insights from the data.<br>
+3. Finally visualising the insights and recommending.</p>
+</div>
+</div>
+<div class="co" style="background-color: whitesmoke">
+<center><h4>PGLife project</h4></center>
+<div class="project">
+    <center><img src="pg.png" width="150px"class="i" ></center><br>
+    <p>  PG Life is a front end web development project where employees and students can use this webpage to search for the covenient PGs in the popular cities like 
+Hyderabad, Banglore, Delhi and Mumbai.<br>
+1. Proper login and signup functionalities will be provided.<br>
+2. Search for the convenient PGs in the required Cities, give ratings to the PGs.</p>
+</div>
+</div>
+    </section>
+
+    <section id="contact" class="section">
+        <div id="con">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="na" name="name" placeholder="Enter your Name" required>
+            <input type="email" name="email" placeholder="Enter your Email" required>
+            <textarea id="t" name="message" placeholder="Share your Message" rows="4" required></textarea>
+            <button type="submit" onclick="fun()">Send</button>
+        </form>
+        </div>
+    </section>
+
+    <footer>
+        <h4 style="color:white">Contact Information</h4>
+        <p style="color:white">Email : divya.chodi@nimbleaccounting.com</p>
+        <phone style="color:white">phone : + 8309825657</phone>
+        <p>&copy; DIVYA CHODI | All rights reserved</p>
+    </footer>
+
+    <script>
+        
+        function fun() {
+var n=document.getElementById("na").value;
+var value = document.getElementById("t").value;
+if(value!="" & n!=""){
+alert("Your message was submitted  \""+value+"\"");
+}
+else{
+    alert("Please enter the details");
+}
+
+}  
+    </script>
+</body>
+</html>
